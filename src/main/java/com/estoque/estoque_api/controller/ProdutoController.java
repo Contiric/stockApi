@@ -14,6 +14,7 @@ public class ProdutoController {
     @Autowired
     ProdutoService produtoService;
 
+    @PostMapping
     public Produto criar(@RequestBody Produto produto){
         return produtoService.criarProduto(produto);
     }
@@ -23,7 +24,7 @@ public class ProdutoController {
         return produtoService.listarProdutos();
     }
 
-    @PostMapping("/{id}")
+    @GetMapping("/{id}")
     public Optional<Produto> buscarId(@PathVariable Long id) {
         return produtoService.buscarId(id);
     }

@@ -15,9 +15,10 @@ public class ProdutoService {
         @Autowired
         ProdutoRepository produtoRepository;
 
-    public Produto criarProduto(Produto produto) {
+        public Produto criarProduto(Produto produto) {
         return produtoRepository.save(produto);
         }
+
         public List<Produto> listarProdutos() {
             return produtoRepository.findAll();
         }
@@ -37,7 +38,7 @@ public class ProdutoService {
 
         }
 
-        public void deletarProduto(@PathVariable Long id) {
+        public void deletarProduto(Long id) {
             produtoRepository.deleteById(id);
         }
 
