@@ -1,10 +1,15 @@
 package com.estoque.estoque_api.model;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
-import java.util.Date;
-
+@Entity(name = "saidaestoque")
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class SaidaEstoque {
 
     @Id
@@ -13,10 +18,10 @@ public class SaidaEstoque {
 
     @ManyToOne
     @JoinColumn(name = "produto_id")
-    public Produto produto_id;
+    public Produto produtoId;
 
     public Integer quantidade;
 
-    public LocalDateTime data_saida;
+    public LocalDateTime dataSaida;
 
 }

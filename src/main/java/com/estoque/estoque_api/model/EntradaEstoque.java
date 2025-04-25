@@ -3,23 +3,26 @@ package com.estoque.estoque_api.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.List;
+import java.time.LocalDateTime;
+import java.util.Date;
 
-@Entity
-@Table(name="estoque")
+@Entity (name = "entradaestoque")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class Estoque {
+public class EntradaEstoque {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
 
-    @OneToMany(mappedBy = "estoque")
-    public List<Produto> produto_id;
+    @ManyToOne
+    @JoinColumn(name = "produto_id")
+    public Produto produto_id;
 
     public Integer quantidade;
+
+    public LocalDateTime entradaEstoque;
 }

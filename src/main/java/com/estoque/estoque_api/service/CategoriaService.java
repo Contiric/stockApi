@@ -3,10 +3,12 @@ package com.estoque.estoque_api.service;
 import com.estoque.estoque_api.model.Categoria;
 import com.estoque.estoque_api.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CategoriaService {
 
     @Autowired
