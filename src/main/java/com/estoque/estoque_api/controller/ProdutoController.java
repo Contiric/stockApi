@@ -1,12 +1,13 @@
 package com.estoque.estoque_api.controller;
 
-import com.estoque.estoque_api.model.Produto;
+import com.estoque.estoque_api.dto.ProdutoDTO;
 import com.estoque.estoque_api.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/produtos")
@@ -16,35 +17,33 @@ public class ProdutoController {
     ProdutoService produtoService;
 
     @PostMapping
-    public Produto criar(@RequestBody Produto produto){
-        return produtoService.criarProduto(produto);
+    public ResponseEntity<ProdutoDTO> criar(@RequestBody ProdutoDTO produtoDTO){
+        ProdutoDTO novoProduto = produtoService.criarProduto(produtoDTO);
+        return new ResponseEntity<>(novoProduto, HttpStatus.CREATED);
     }
 
     @GetMapping
-    public List<Produto> listarProdutos() {
-        return produtoService.listarProdutos();
+    public ResponseEntity<List<ProdutoDTO>> listarProdutos() {
+        List<ProdutoDTO> produtoDTOS = produtoService.listarProdutos();
+        return ResponseEntity.ok(produtoDTOS);
     }
 
     @GetMapping("/{id}")
-    public Optional<Produto> buscarId(@PathVariable Long id) {
-        return produtoService.buscarId(id);
+    public ResponseEntity<ProdutoDTO> buscarId(@PathVariable Long id) {
+        ProdutoDTO produtoDTO = produtoService.buscarId(id);
+        return ResponseEntity.ok(produtoDTO);
     }
 
     @PutMapping("/{id}")
-    public Produto atualizar(@PathVariable Long id, @RequestBody Produto produtoAtualizado){
-        return produtoService.buscarId(id)
-                .map(produto -> {
-                    produto.setNome(produtoAtualizado.getNome());
-                    produto.setDescricao(produtoAtualizado.getDescricao());
-                    produto.setCategoria(produtoAtualizado.getCategoria());
-                    return produtoService.criarProduto(produto);
-                }).orElseThrow();
-
-    }
+    public ResponseEntity<ProdutoDTO> atualizar(@PathVariable Long id, @RequestBody ProdutoDTO produtoAtualizado){
+        ProdutoDTO atualizar = produtoService.atualizar(id, produtoAtualizado);
+        return ResponseEntity.ok(produtoAtualizado);
+    }*
 
     @DeleteMapping("/{id}")
-    public void deletarProduto(@PathVariable Long id) {
+    public ResponseEntity<Void> deletarProduto(@PathVariable Long id) {
         produtoService.deletarProduto(id);
+        return ResponseEntity.noContent().build();
     }
 
 }
