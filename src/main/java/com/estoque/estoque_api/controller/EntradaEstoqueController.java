@@ -1,12 +1,13 @@
 package com.estoque.estoque_api.controller;
 
+import com.estoque.estoque_api.dto.EntradaEstoqueDTO;
 import com.estoque.estoque_api.model.EntradaEstoque;
 import com.estoque.estoque_api.service.EntradaEstoqueService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/entradaestoque")
@@ -16,22 +17,29 @@ public class EntradaEstoqueController {
     EntradaEstoqueService entradaEstoqueService;
 
     @GetMapping("/{id}")
-    public Optional<EntradaEstoque> findById(@PathVariable Long id) {
-        return entradaEstoqueService.findbyId(id);
+    public ResponseEntity<EntradaEstoqueDTO> findById(@PathVariable Long id) {
+        EntradaEstoqueDTO entradaEstoqueDTO = entradaEstoqueService.findbyId(id);
+        return ResponseEntity.ok(entradaEstoqueDTO);
     }
 
     @GetMapping
-    public List<EntradaEstoque> listarEntradas(){
-        return entradaEstoqueService.listarEntradas();
+    public ResponseEntity<List<EntradaEstoqueDTO>>  listarEntradas(){
+        List<EntradaEstoqueDTO> entradaEstoqueDTOS = entradaEstoqueService.listarEntradas();
+
+        return ResponseEntity.ok(entradaEstoqueDTOS);
     }
 
     @PostMapping
-    public EntradaEstoque registrarEntrada(@RequestBody EntradaEstoque entradaEstoque){
-        return entradaEstoqueService.registrarEntrada(entradaEstoque);
+    public ResponseEntity<EntradaEstoqueDTO> registrarEntrada(@RequestBody EntradaEstoque entradaEstoque){
+        EntradaEstoqueDTO entradaEstoqueDTO = entradaEstoqueService.registrarEntrada(entradaEstoque);
+
+        return ResponseEntity.ok(entradaEstoqueDTO);
     }
 
     @DeleteMapping
-    public void deletarEntrada(@RequestBody EntradaEstoque entradaEstoque){
+    public ResponseEntity<Void> deletarEntrada(@RequestBody EntradaEstoque entradaEstoque){
         entradaEstoqueService.deletarEntrada(entradaEstoque);
+
+        return ResponseEntity.noContent().build();
     }
 }
