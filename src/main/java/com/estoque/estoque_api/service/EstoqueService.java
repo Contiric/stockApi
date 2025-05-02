@@ -1,12 +1,14 @@
 package com.estoque.estoque_api.service;
 
+import com.estoque.estoque_api.dto.EstoqueDTO;
+import com.estoque.estoque_api.mapper.EstoqueMapper;
 import com.estoque.estoque_api.model.Estoque;
 import com.estoque.estoque_api.repository.EstoqueRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class EstoqueService {
@@ -14,26 +16,39 @@ public class EstoqueService {
     @Autowired
     EstoqueRepository estoqueRepository;
 
-    public Optional<Estoque> findById(Long id) {
-        return estoqueRepository.findById(id);
+    @Autowired
+    EstoqueMapper estoqueMapper;
+
+    public EstoqueDTO findById(Long id) {
+            Estoque estoque = estoqueRepository.findById(id)
+                    .orElseThrow(() -> new RuntimeException("Produto não encontrado com ID: " + id));
+            return estoqueMapper.toDTO(estoque);
     }
 
-    public List<Estoque> listarEstoque() {
-        return estoqueRepository.findAll();
+    public List<EstoqueDTO> listarEstoque() {
+        List<Estoque> estoques = estoqueRepository.findAll();
+
+        return estoques.stream()
+                .map(estoqueMapper::toDTO)
+                .collect(Collectors.toList());
     }
 
-    public Estoque criarEstoque(Estoque estoque) {
-        return estoqueRepository.save(estoque);
+    public EstoqueDTO criarEstoque(Estoque estoque) {
+        Estoque newEstoque = estoqueRepository.save(estoque);
+
+        return estoqueMapper.toDTO(newEstoque);
     }
 
-    public Estoque atualizar(Long id, Estoque estoqueAtualizado) {
-        return estoqueRepository.findById(id)
-                .map(estoque -> {
-                    estoque.setQuantidade(estoqueAtualizado.getQuantidade());
-                    estoque.setProduto_id(estoqueAtualizado.getProduto_id());
-                    return estoqueRepository.save(estoque);
-                }).orElseThrow();
+    public EstoqueDTO atualizar(Long id, EstoqueDTO estoqueAtualizado) {
+        Estoque estoque = estoqueRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Produto não encontrado com ID: " + id));
 
+        estoque.setId(estoqueAtualizado.getId());
+        estoque.setQuantidade(estoqueAtualizado.getQuantidade());
+
+        Estoque newEstoque = estoqueRepository.save(estoque);
+
+        return estoqueMapper.toDTO(newEstoque);
     }
 
     public void removerEstoque(Long id) {

@@ -1,12 +1,13 @@
 package com.estoque.estoque_api.controller;
 
+import com.estoque.estoque_api.dto.EstoqueDTO;
 import com.estoque.estoque_api.model.Estoque;
 import com.estoque.estoque_api.service.EstoqueService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/estoque")
@@ -16,33 +17,34 @@ public class EstoqueController {
     EstoqueService estoqueService;
 
     @GetMapping("/{id}")
-    public Optional<Estoque> findById(@PathVariable Long id) {
-        return estoqueService.findById(id);
+    public ResponseEntity<EstoqueDTO> findById(@PathVariable Long id) {
+            EstoqueDTO byId = estoqueService.findById(id);
+            return ResponseEntity.ok(byId);
     }
 
     @GetMapping
-    public List<Estoque> listarEstoques() {
-        return estoqueService.listarEstoque();
+    public ResponseEntity<List<EstoqueDTO>> listarEstoques() {
+        List<EstoqueDTO> estoqueDTOS = estoqueService.listarEstoque();
+        return ResponseEntity.ok(estoqueDTOS);
     }
 
     @PostMapping
-    public Estoque criarEstoque(@RequestBody Estoque Estoque) {
-        return estoqueService.criarEstoque(Estoque);
+    public ResponseEntity<EstoqueDTO> criarEstoque(@RequestBody Estoque Estoque) {
+        EstoqueDTO estoqueDTO = estoqueService.criarEstoque(Estoque);
+
+        return ResponseEntity.ok(estoqueDTO);
     }
 
     @PutMapping("/{id}")
-    public Estoque atualizar(@PathVariable Long id, @RequestBody Estoque estoqueAtualizado) {
-        return estoqueService.findById(id)
-                .map(estoque ->  {
-                    estoque.setQuantidade(estoqueAtualizado.getQuantidade());
-                    estoque.setProduto_id(estoqueAtualizado.getProduto_id());
-                    return estoqueService.criarEstoque(estoque);
-                }).orElseThrow();
+    public ResponseEntity<EstoqueDTO> atualizar(@PathVariable Long id, @RequestBody EstoqueDTO estoqueAtualizado) {
+        EstoqueDTO atualizado = estoqueService.atualizar(id, estoqueAtualizado);
+        return ResponseEntity.ok(atualizado);
     }
 
     @DeleteMapping("/{id}")
-    public void removerEstoque(@PathVariable Long id) {
+    public ResponseEntity<Void> removerEstoque(@PathVariable Long id) {
         estoqueService.removerEstoque(id);
+        return ResponseEntity.noContent().build();
     }
 }
 
