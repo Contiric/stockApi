@@ -38,7 +38,7 @@ public class ProdutoController {
     public ResponseEntity<ProdutoDTO> atualizar(@PathVariable Long id, @RequestBody ProdutoDTO produtoAtualizado){
         ProdutoDTO atualizar = produtoService.atualizar(id, produtoAtualizado);
         return ResponseEntity.ok(produtoAtualizado);
-    }*
+    }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletarProduto(@PathVariable Long id) {

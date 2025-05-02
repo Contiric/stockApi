@@ -1,12 +1,13 @@
 package com.estoque.estoque_api.controller;
 
+import com.estoque.estoque_api.dto.CategoriaDTO;
 import com.estoque.estoque_api.model.Categoria;
 import com.estoque.estoque_api.service.CategoriaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/categoria")
@@ -16,33 +17,32 @@ public class CategoriaController {
     CategoriaService categoriaService;
 
     @GetMapping("/{id}")
-    public Optional<Categoria> findById(@PathVariable Long id) {
-        return categoriaService.findById(id);
+    public ResponseEntity<CategoriaDTO> findById(@PathVariable Long id) {
+        CategoriaDTO dto = categoriaService.findById(id);
+        return ResponseEntity.ok(dto);
     }
 
     @GetMapping
-    public List<Categoria> listarCategorias() {
-        return categoriaService.listarCategorias();
+    public ResponseEntity<CategoriaDTO> listarCategorias() {
+        List<CategoriaDTO> categoriaDTOS = categoriaService.listarCategorias();
+        return ResponseEntity.ok().build();
     }
 
     @PostMapping
-    public Categoria criarCategoria(@RequestBody Categoria categoria) {
-        return categoriaService.criarCategoria(categoria);
+    public ResponseEntity<CategoriaDTO> criarCategoria(@RequestBody Categoria categoria) {
+        CategoriaDTO categoriaDTO = categoriaService.criarCategoria(categoria);
+        return ResponseEntity.ok(categoriaDTO);
     }
 
     @PutMapping("/{id}")
-    public Categoria atualizar(@PathVariable Long id, @RequestBody Categoria categoriaAtualizado) {
-        return categoriaService.findById(id)
-                .map(categoria ->  {
-                    categoria.setDescricao(categoriaAtualizado.getDescricao());
-                    categoria.setNome(categoria.getNome());
-                    return categoriaService.criarCategoria(categoria);
-                }).orElseThrow();
-
+    public ResponseEntity<CategoriaDTO> atualizar(@PathVariable Long id, @RequestBody CategoriaDTO categoriaAtualizado) {
+        CategoriaDTO atualizar = categoriaService.atualizar(id, categoriaAtualizado);
+        return ResponseEntity.ok(atualizar);
     }
 
     @DeleteMapping("/{id}")
-    public void removerCategoria(@PathVariable Long id) {
-        categoriaService.removerCategoria(id);
+    public ResponseEntity<Void> removerCategoria(@PathVariable Long id) {
+         categoriaService.removerCategoria(id);
+         return ResponseEntity.noContent().build();
     }
 }
