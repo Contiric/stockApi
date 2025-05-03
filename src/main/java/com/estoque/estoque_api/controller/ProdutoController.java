@@ -2,6 +2,7 @@ package com.estoque.estoque_api.controller;
 
 import com.estoque.estoque_api.dto.ProdutoDTO;
 import com.estoque.estoque_api.service.ProdutoService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +18,7 @@ public class ProdutoController {
     ProdutoService produtoService;
 
     @PostMapping
-    public ResponseEntity<ProdutoDTO> criar(@RequestBody ProdutoDTO produtoDTO){
+    public ResponseEntity<ProdutoDTO> criar(@Valid @RequestBody ProdutoDTO produtoDTO){
         ProdutoDTO novoProduto = produtoService.criarProduto(produtoDTO);
         return new ResponseEntity<>(novoProduto, HttpStatus.CREATED);
     }

@@ -3,6 +3,7 @@ package com.estoque.estoque_api.controller;
 import com.estoque.estoque_api.dto.EstoqueDTO;
 import com.estoque.estoque_api.model.Estoque;
 import com.estoque.estoque_api.service.EstoqueService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +30,7 @@ public class EstoqueController {
     }
 
     @PostMapping
-    public ResponseEntity<EstoqueDTO> criarEstoque(@RequestBody Estoque Estoque) {
+    public ResponseEntity<EstoqueDTO> criarEstoque(@Valid @RequestBody Estoque Estoque) {
         EstoqueDTO estoqueDTO = estoqueService.criarEstoque(Estoque);
 
         return ResponseEntity.ok(estoqueDTO);

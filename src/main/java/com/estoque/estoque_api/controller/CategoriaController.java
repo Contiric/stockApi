@@ -3,6 +3,7 @@ package com.estoque.estoque_api.controller;
 import com.estoque.estoque_api.dto.CategoriaDTO;
 import com.estoque.estoque_api.model.Categoria;
 import com.estoque.estoque_api.service.CategoriaService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +30,7 @@ public class CategoriaController {
     }
 
     @PostMapping
-    public ResponseEntity<CategoriaDTO> criarCategoria(@RequestBody Categoria categoria) {
+    public ResponseEntity<CategoriaDTO> criarCategoria(@Valid @RequestBody Categoria categoria) {
         CategoriaDTO categoriaDTO = categoriaService.criarCategoria(categoria);
         return ResponseEntity.ok(categoriaDTO);
     }
