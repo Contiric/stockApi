@@ -19,7 +19,7 @@ public class Estoque {
     public Long id;
 
     @OneToMany(mappedBy = "estoque")
-    public List<Produto> produto_id;
+    public List<Produto> produtos;
 
     public Integer quantidade;
 }

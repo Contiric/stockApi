@@ -23,7 +23,11 @@ public class Produto {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "categoria_id")
-    private Long categoriaId;
+    private Categoria categoria;
+
+    @ManyToOne
+    @JoinColumn(name = "estoque_id")
+    private Estoque estoque;
 
     private Boolean preco;
 }

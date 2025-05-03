@@ -2,7 +2,9 @@ package com.estoque.estoque_api.mapper;
 
 import com.estoque.estoque_api.dto.EntradaEstoqueDTO;
 import com.estoque.estoque_api.model.EntradaEstoque;
+import org.springframework.stereotype.Component;
 
+@Component
 public class EntradaEstoqueMapper {
 
     public EntradaEstoqueDTO toDTO(EntradaEstoque entradaEstoque){

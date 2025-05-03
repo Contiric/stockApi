@@ -40,7 +40,6 @@ public class CategoriaService {
     }
 
     public CategoriaDTO atualizar(Long id, CategoriaDTO categoriaDTO) {
-
          Categoria categoria = categoriaRepository
                  .findById(id).orElseThrow(()-> new BusinessException("Produto não encontrado com id: " + id));
 

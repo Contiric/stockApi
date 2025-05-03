@@ -45,7 +45,6 @@ public class ProdutoService {
                          .orElseThrow(()-> new BusinessException("Produto não encontrado com id: " + id));
             produto.setNome(produtoAtualizado.getNome());
             produto.setDescricao(produtoAtualizado.getDescricao());
-            produto.setCategoriaId(produtoAtualizado.getCategoriaId());
 
             Produto salvo = produtoRepository.save(produto);
 

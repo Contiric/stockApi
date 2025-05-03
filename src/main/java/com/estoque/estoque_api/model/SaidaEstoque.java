@@ -18,7 +18,7 @@ public class SaidaEstoque {
 
     @ManyToOne
     @JoinColumn(name = "produto_id")
-    public Produto produtoId;
+    public Produto produto;
 
     public Integer quantidade;
 

@@ -20,7 +20,7 @@ public class EntradaEstoque {
 
     @ManyToOne
     @JoinColumn(name = "produto_id")
-    public Long produtoId;
+    public Produto produto;
 
     public Integer quantidade;
 
