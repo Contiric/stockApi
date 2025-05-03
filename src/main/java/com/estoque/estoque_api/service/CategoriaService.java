@@ -1,6 +1,7 @@
 package com.estoque.estoque_api.service;
 
 import com.estoque.estoque_api.dto.CategoriaDTO;
+import com.estoque.estoque_api.exception.BusinessException;
 import com.estoque.estoque_api.mapper.CategoriaMapper;
 import com.estoque.estoque_api.model.Categoria;
 import com.estoque.estoque_api.repository.CategoriaRepository;
@@ -21,7 +22,7 @@ public class CategoriaService {
 
     public CategoriaDTO findById(Long id) {
         Categoria byId = categoriaRepository.findById(id)
-                .orElseThrow(() ->new RuntimeException("Categoria não encontrada com o id:" + id));
+                .orElseThrow(() ->new BusinessException("Categoria não encontrada com o id:" + id));
         return categoriaMapper.toDto(byId);
     }
 
@@ -38,20 +39,23 @@ public class CategoriaService {
         return categoriaMapper.toDto(categoria1);
     }
 
-    public CategoriaDTO atualizar(Long id, CategoriaDTO categoriaAtualizado) {
+    public CategoriaDTO atualizar(Long id, CategoriaDTO categoriaDTO) {
 
          Categoria categoria = categoriaRepository
-                 .findById(id).orElseThrow(()-> new RuntimeException("Produto não encontrado com id: " + id));
+                 .findById(id).orElseThrow(()-> new BusinessException("Produto não encontrado com id: " + id));
 
-                    categoria.setDescricao(categoriaAtualizado.getDescricao());
-                    categoria.setNome(categoria.getNome());
+                    categoria.setDescricao(categoriaDTO.getDescricao());
+                    categoria.setNome(categoriaDTO.getNome());
         Categoria salvo = categoriaRepository.save(categoria);
 
         return categoriaMapper.toDto(salvo);
     }
 
     public void removerCategoria(Long id) {
-        categoriaRepository.deleteById(id);
+        Categoria categoria = categoriaRepository.findById(id)
+                .orElseThrow(() -> new BusinessException("Categoria não encontrada com o id: " + id));
+
+        categoriaRepository.delete(categoria);
     }
 
 }

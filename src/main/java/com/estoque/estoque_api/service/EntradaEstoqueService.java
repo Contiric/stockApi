@@ -1,6 +1,7 @@
 package com.estoque.estoque_api.service;
 
 import com.estoque.estoque_api.dto.EntradaEstoqueDTO;
+import com.estoque.estoque_api.exception.BusinessException;
 import com.estoque.estoque_api.mapper.EntradaEstoqueMapper;
 import com.estoque.estoque_api.model.EntradaEstoque;
 import com.estoque.estoque_api.repository.EntradaEstoqueRepository;
@@ -19,9 +20,9 @@ public class EntradaEstoqueService {
     @Autowired
     EntradaEstoqueMapper entradaEstoqueMapper;
 
-    public EntradaEstoqueDTO findbyId(Long id){
+    public EntradaEstoqueDTO findById(Long id){
         EntradaEstoque entradaEstoque = entradaEstoqueRepository.findById(id)
-                .orElseThrow(()-> new RuntimeException("Id de entrada não encontrado:" + id));
+                .orElseThrow(()-> new BusinessException("Id de entrada não encontrado:" + id));
 
         return entradaEstoqueMapper.toDTO(entradaEstoque);
     }
@@ -38,8 +39,10 @@ public class EntradaEstoqueService {
         return entradaEstoqueMapper.toDTO(entrada);
     }
 
-    public void deletarEntrada(EntradaEstoque entradaEstoque){
-        entradaEstoqueRepository.delete(entradaEstoque);
+    public void deletarEntrada(Long id){
+        EntradaEstoque entrada = entradaEstoqueRepository.findById(id)
+                .orElseThrow(() -> new BusinessException("Entrada de estoque não encontrada com o id: " + id));
+        entradaEstoqueRepository.delete(entrada);
     }
 
 }

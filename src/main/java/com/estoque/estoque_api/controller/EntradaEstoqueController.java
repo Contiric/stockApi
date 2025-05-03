@@ -19,7 +19,7 @@ public class EntradaEstoqueController {
 
     @GetMapping("/{id}")
     public ResponseEntity<EntradaEstoqueDTO> findById(@PathVariable Long id) {
-        EntradaEstoqueDTO entradaEstoqueDTO = entradaEstoqueService.findbyId(id);
+        EntradaEstoqueDTO entradaEstoqueDTO = entradaEstoqueService.findById(id);
         return ResponseEntity.ok(entradaEstoqueDTO);
     }
 
@@ -38,8 +38,8 @@ public class EntradaEstoqueController {
     }
 
     @DeleteMapping
-    public ResponseEntity<Void> deletarEntrada(@RequestBody EntradaEstoque entradaEstoque){
-        entradaEstoqueService.deletarEntrada(entradaEstoque);
+    public ResponseEntity<Void> deletarEntrada(@RequestBody Long id){
+        entradaEstoqueService.deletarEntrada(id);
 
         return ResponseEntity.noContent().build();
     }

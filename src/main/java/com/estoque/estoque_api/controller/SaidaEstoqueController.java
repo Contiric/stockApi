@@ -23,8 +23,8 @@ public class SaidaEstoqueController {
     }
 
     @PostMapping
-    public ResponseEntity<SaidaEstoqueDTO> registrarSaida(@Valid @RequestBody SaidaEstoque saidaEstoque){
-        SaidaEstoqueDTO saidaEstoqueDTO =  saidaEstoqueService.registrarSaida(saidaEstoque);
+    public ResponseEntity<SaidaEstoqueDTO> registrarSaida(@Valid @RequestBody SaidaEstoqueDTO saidaEstoqueDTO){
+        SaidaEstoqueDTO saidaDTO =  saidaEstoqueService.registrarSaida(saidaEstoqueDTO);
 
         return ResponseEntity.ok(saidaEstoqueDTO);
     }

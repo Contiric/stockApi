@@ -23,7 +23,7 @@ public class Produto {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "categoria_id")
-    private Categoria categoria;
+    private Long categoriaId;
 
     private Boolean preco;
 }

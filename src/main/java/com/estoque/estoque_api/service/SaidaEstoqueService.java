@@ -1,6 +1,7 @@
 package com.estoque.estoque_api.service;
 
 import com.estoque.estoque_api.dto.SaidaEstoqueDTO;
+import com.estoque.estoque_api.exception.BusinessException;
 import com.estoque.estoque_api.mapper.SaidaEstoqueMapper;
 import com.estoque.estoque_api.model.SaidaEstoque;
 import com.estoque.estoque_api.repository.SaidaEstoqueRepository;
@@ -14,32 +15,34 @@ import java.util.stream.Collectors;
 public class SaidaEstoqueService {
 
     @Autowired
-    SaidaEstoqueRepository estoqueRepository;
+    SaidaEstoqueRepository saidaEstoqueRepository;
 
     @Autowired
     SaidaEstoqueMapper saidaEstoqueMapper;
 
     public SaidaEstoqueDTO findById(Long id){
-        SaidaEstoque saidaEstoque = estoqueRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Não foi encontrado o id da saída:" + id));
+        SaidaEstoque saidaEstoque = saidaEstoqueRepository.findById(id)
+                .orElseThrow(() -> new BusinessException("Não foi encontrado o id da saída:" + id));
 
         return saidaEstoqueMapper.toDTO(saidaEstoque);
     }
 
     public List<SaidaEstoqueDTO> findAll(){
-        return estoqueRepository.findAll()
+        return saidaEstoqueRepository.findAll()
                 .stream().map(saidaEstoqueMapper::toDTO)
                 .collect(Collectors.toList());
     }
 
-    public SaidaEstoqueDTO registrarSaida(SaidaEstoque saidaEstoque){
-        SaidaEstoque novaSaida = estoqueRepository.save(saidaEstoque);
-
+    public SaidaEstoqueDTO registrarSaida(SaidaEstoqueDTO saidaDTO){
+        SaidaEstoque saida = saidaEstoqueMapper.toEntity(saidaDTO);
+        SaidaEstoque novaSaida = saidaEstoqueRepository.save(saida);
         return saidaEstoqueMapper.toDTO(novaSaida);
     }
 
     public void deletarSaida(Long id){
-        estoqueRepository.deleteById(id);
+        SaidaEstoque saidaEstoque = saidaEstoqueRepository.findById(id)
+                .orElseThrow(() -> new BusinessException("Saída não encontrada com ID: " + id));
+        saidaEstoqueRepository.delete(saidaEstoque);
     }
 
 }

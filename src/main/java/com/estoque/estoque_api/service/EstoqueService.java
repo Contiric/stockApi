@@ -1,6 +1,7 @@
 package com.estoque.estoque_api.service;
 
 import com.estoque.estoque_api.dto.EstoqueDTO;
+import com.estoque.estoque_api.exception.BusinessException;
 import com.estoque.estoque_api.mapper.EstoqueMapper;
 import com.estoque.estoque_api.model.Estoque;
 import com.estoque.estoque_api.repository.EstoqueRepository;
@@ -21,7 +22,7 @@ public class EstoqueService {
 
     public EstoqueDTO findById(Long id) {
             Estoque estoque = estoqueRepository.findById(id)
-                    .orElseThrow(() -> new RuntimeException("Produto não encontrado com ID: " + id));
+                    .orElseThrow(() -> new BusinessException("Estoque não encontrado com ID: " + id));
             return estoqueMapper.toDTO(estoque);
     }
 
@@ -41,9 +42,8 @@ public class EstoqueService {
 
     public EstoqueDTO atualizar(Long id, EstoqueDTO estoqueAtualizado) {
         Estoque estoque = estoqueRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Produto não encontrado com ID: " + id));
+                .orElseThrow(() -> new BusinessException("Estoque não encontrado com ID: " + id));
 
-        estoque.setId(estoqueAtualizado.getId());
         estoque.setQuantidade(estoqueAtualizado.getQuantidade());
 
         Estoque newEstoque = estoqueRepository.save(estoque);
@@ -52,6 +52,8 @@ public class EstoqueService {
     }
 
     public void removerEstoque(Long id) {
-        estoqueRepository.deleteById(id);
+        Estoque estoque = estoqueRepository.findById(id)
+                .orElseThrow(() -> new BusinessException("Estoque não encontrado com ID: " + id));
+        estoqueRepository.delete(estoque);
     }
 }
