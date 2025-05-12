@@ -1,15 +1,15 @@
 package com.estoque.estoque_api.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 @Entity(name = "saidaestoque")
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
 public class SaidaEstoque {
 
     @Id
@@ -24,4 +24,35 @@ public class SaidaEstoque {
 
     public LocalDateTime dataSaida;
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Produto getProduto() {
+        return produto;
+    }
+
+    public void setProduto(Produto produto) {
+        this.produto = produto;
+    }
+
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public LocalDateTime getDataSaida() {
+        return dataSaida;
+    }
+
+    public void setDataSaida(LocalDateTime dataSaida) {
+        this.dataSaida = dataSaida;
+    }
 }

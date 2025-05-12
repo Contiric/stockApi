@@ -31,8 +31,8 @@ public class EntradaEstoqueController {
     }
 
     @PostMapping
-    public ResponseEntity<EntradaEstoqueDTO> registrarEntrada(@Valid @RequestBody EntradaEstoque entradaEstoque){
-        EntradaEstoqueDTO entradaEstoqueDTO = entradaEstoqueService.registrarEntrada(entradaEstoque);
+    public ResponseEntity<EntradaEstoqueDTO> registrarEntrada(@Valid @RequestBody EntradaEstoqueDTO entradaEstoqueDTO){
+        EntradaEstoqueDTO entrada = entradaEstoqueService.registrarEntrada(entradaEstoqueDTO);
 
         return ResponseEntity.ok(entradaEstoqueDTO);
     }

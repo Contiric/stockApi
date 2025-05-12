@@ -30,10 +30,10 @@ public class EstoqueController {
     }
 
     @PostMapping
-    public ResponseEntity<EstoqueDTO> criarEstoque(@Valid @RequestBody Estoque Estoque) {
-        EstoqueDTO estoqueDTO = estoqueService.criarEstoque(Estoque);
+    public ResponseEntity<EstoqueDTO> criarEstoque(@Valid @RequestBody EstoqueDTO estoqueDTO) {
+        EstoqueDTO novoEstoque = estoqueService.criarEstoque(estoqueDTO);
 
-        return ResponseEntity.ok(estoqueDTO);
+        return ResponseEntity.ok(novoEstoque);
     }
 
     @PutMapping("/{id}")

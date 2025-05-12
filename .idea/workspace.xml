@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a7a0face-aadb-4809-88c7-591894384e24" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/CategoriaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EntradaEstoqueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EntradaEstoqueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EstoqueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EstoqueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/CategoriaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/CategoriaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EntradaEstoqueDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EntradaEstoqueDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EstoqueDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EstoqueDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/ProdutoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/ProdutoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/SaidaEstoqueDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/SaidaEstoqueDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/EntradaEstoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/EntradaEstoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/SaidaEstoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/SaidaEstoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/CategoriaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EntradaEstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EntradaEstoqueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EstoqueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/ProdutoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/SaidaEstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/SaidaEstoqueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2wv1shmQTVcV7We3jbs2B1iMphI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EstoqueApiApplication.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Ricardo Dev/OneDrive/Área de Trabalho/estoqueapi/estoque-api/estoque-api",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ricardo Dev\OneDrive\Área de Trabalho\estoqueapi\estoque-api\estoque-api\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.EstoqueApiApplication">
+    <configuration name="EstoqueApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.EstoqueApiApplication" />
+      <module name="estoque-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.estoque.estoque_api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application">
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/EstoqueApiApplication.java" />
+      </option>
+      <option name="MAIN_CLASS_NAME" value="EstoqueApiApplication.java" />
+      <module name="estoque-api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EstoqueApiApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7a0face-aadb-4809-88c7-591894384e24" name="Changes" comment="" />
+      <created>1746907442431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746907442431</updated>
+    </task>
+    <servers />
+  </component>
+</project>

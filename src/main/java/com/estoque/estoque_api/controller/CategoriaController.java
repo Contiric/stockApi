@@ -24,19 +24,19 @@ public class CategoriaController {
     }
 
     @GetMapping
-    public ResponseEntity<CategoriaDTO> listarCategorias() {
+    public ResponseEntity<List<CategoriaDTO>> listarCategorias() {
         List<CategoriaDTO> categoriaDTOS = categoriaService.listarCategorias();
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(categoriaDTOS);
     }
 
     @PostMapping
-    public ResponseEntity<CategoriaDTO> criarCategoria(@Valid @RequestBody Categoria categoria) {
+    public ResponseEntity<CategoriaDTO> criarCategoria(@Valid @RequestBody CategoriaDTO categoria) {
         CategoriaDTO categoriaDTO = categoriaService.criarCategoria(categoria);
         return ResponseEntity.ok(categoriaDTO);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<CategoriaDTO> atualizar(@PathVariable Long id, @RequestBody CategoriaDTO categoriaAtualizado) {
+    public ResponseEntity<CategoriaDTO> atualizar(@Valid @PathVariable Long id, @RequestBody CategoriaDTO categoriaAtualizado) {
         CategoriaDTO atualizar = categoriaService.atualizar(id, categoriaAtualizado);
         return ResponseEntity.ok(atualizar);
     }

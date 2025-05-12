@@ -22,4 +22,36 @@ public class EntradaEstoqueDTO {
 
     @NotNull(message = "A data de entrada é obrigatória")
     public LocalDateTime entradaEstoque;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public @NotNull Long getProdutoId() {
+        return produtoId;
+    }
+
+    public void setProdutoId(Long produtoId) {
+        this.produtoId = produtoId;
+    }
+
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade (Integer quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public LocalDateTime getEntradaEstoque() {
+        return entradaEstoque;
+    }
+
+    public void setEntradaEstoque (LocalDateTime entradaEstoque) {
+        this.entradaEstoque = entradaEstoque;
+    }
 }
