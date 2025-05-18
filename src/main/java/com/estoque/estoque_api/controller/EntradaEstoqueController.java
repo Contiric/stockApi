@@ -37,8 +37,8 @@ public class EntradaEstoqueController {
         return ResponseEntity.ok(entradaEstoqueDTO);
     }
 
-    @DeleteMapping
-    public ResponseEntity<Void> deletarEntrada(@RequestBody Long id){
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletarEntrada(@PathVariable Long id){
         entradaEstoqueService.deletarEntrada(id);
 
         return ResponseEntity.noContent().build();

@@ -29,7 +29,7 @@ public class Produto {
     @JoinColumn(name = "estoque_id")
     private Estoque estoque;
 
-    private Boolean preco;
+    private Double preco;
 
     public Long getId() {
         return id;
@@ -63,19 +63,19 @@ public class Produto {
         this.categoria = categoria;
     }
 
-    public Estoque getEstoque() {
-        return estoque;
-    }
+      public Estoque getEstoque() {
+          return estoque;
+      }
 
-    public void setEstoque(Estoque estoque) {
+      public void setEstoque(Estoque estoque) {
         this.estoque = estoque;
-    }
+      }
 
-    public Boolean getPreco() {
+    public Double getPreco() {
         return preco;
     }
 
-    public void setPreco(Boolean preco) {
+    public void setPreco(Double preco) {
         this.preco = preco;
     }
 }

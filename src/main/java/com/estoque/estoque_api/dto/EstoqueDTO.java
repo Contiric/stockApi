@@ -5,6 +5,8 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 public class EstoqueDTO {
@@ -12,11 +14,19 @@ public class EstoqueDTO {
     public Long id;
 
     @NotNull(message = "O id do produto não pode ser nulo")
-    public Long produtoId;
+    public List<Long> produtoIds;
 
     @NotNull(message = "A quantidade é obrigatória")
     @Min(value = 1, message = "A quantidade mínima deve ser 1")
     public int quantidade;
+
+    public List<Long> getProdutoIds() {
+        return produtoIds;
+    }
+
+    public void setProdutoIds(@NotNull List<Long> produtoIds) {
+        this.produtoIds = produtoIds;
+    }
 
     public Long getId() {
         return id;
@@ -25,15 +35,6 @@ public class EstoqueDTO {
     public void setId(Long id) {
         this.id = id;
     }
-
-    public Long getProdutoId() {
-        return produtoId;
-    }
-
-    public void setProdutoId (Long produtoId) {
-        this.produtoId = produtoId;
-    }
-
 
     public int getQuantidade() {
         return quantidade;

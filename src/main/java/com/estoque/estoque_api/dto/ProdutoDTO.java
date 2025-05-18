@@ -22,7 +22,7 @@ public class ProdutoDTO {
     @Size(max = 255, message = "A descrição pode ter no máximo 255 caracteres")
     private String descricao;
 
-    private Boolean preco;
+    private Double preco;
 
     public Long getId() {
         return id;
@@ -56,11 +56,11 @@ public class ProdutoDTO {
         this.descricao = descricao;
     }
 
-    public Boolean getPreco() {
+    public Double getPreco() {
         return preco;
     }
 
-    public void setPreco(Boolean preco) {
+    public void setPreco(Double preco) {
         this.preco = preco;
     }
 }

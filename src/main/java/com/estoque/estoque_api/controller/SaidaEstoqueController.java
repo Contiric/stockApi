@@ -16,7 +16,7 @@ public class SaidaEstoqueController {
     SaidaEstoqueService saidaEstoqueService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<SaidaEstoqueDTO> findById(Long id){
+    public ResponseEntity<SaidaEstoqueDTO> findById(@PathVariable Long id){
            SaidaEstoqueDTO saidaEstoqueDTO = saidaEstoqueService.findById(id);
 
            return ResponseEntity.ok(saidaEstoqueDTO);
@@ -29,7 +29,7 @@ public class SaidaEstoqueController {
         return ResponseEntity.ok(saidaEstoqueDTO);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletarSaida(@PathVariable Long id){
         saidaEstoqueService.deletarSaida(id);
 

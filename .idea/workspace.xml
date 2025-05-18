@@ -5,33 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7a0face-aadb-4809-88c7-591894384e24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/CategoriaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EntradaEstoqueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EntradaEstoqueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EstoqueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EstoqueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/CategoriaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/CategoriaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EntradaEstoqueDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EntradaEstoqueDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/SaidaEstoqueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/SaidaEstoqueController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EstoqueDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EstoqueDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/ProdutoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/ProdutoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/SaidaEstoqueDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/SaidaEstoqueDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/EntradaEstoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/EntradaEstoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/mapper/EstoqueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/mapper/EstoqueMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/mapper/ProdutoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/mapper/ProdutoMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/SaidaEstoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/SaidaEstoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/CategoriaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/CategoriaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EntradaEstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EntradaEstoqueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EstoqueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/ProdutoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/SaidaEstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/SaidaEstoqueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,21 +38,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EstoqueApiApplication.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ricardo Dev/OneDrive/Área de Trabalho/estoqueapi/estoque-api/estoque-api",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EstoqueApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ricardo Dev/OneDrive/Área de Trabalho/estoqueapi/estoque-api/estoque-api&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ricardo Dev\OneDrive\Área de Trabalho\estoqueapi\estoque-api\estoque-api\src" />
@@ -116,5 +98,16 @@
       <updated>1746907442431</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
