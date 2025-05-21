@@ -5,20 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7a0face-aadb-4809-88c7-591894384e24" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/service/EstoqueServiceTeste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/CategoriaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/CategoriaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EntradaEstoqueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/EntradaEstoqueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/SaidaEstoqueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/controller/SaidaEstoqueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EstoqueDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/EstoqueDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/ProdutoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/dto/ProdutoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/mapper/EstoqueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/mapper/EstoqueMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/mapper/ProdutoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/mapper/ProdutoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/ProdutoServiceTeste.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,40 +40,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.EstoqueApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ricardo Dev/OneDrive/Área de Trabalho/estoqueapi/estoque-api/estoque-api&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EstoqueApiApplication.executor": "Run",
+    "Application.Unnamed.executor": "Run",
+    "JUnit.EstoqueServiceTeste.atualizarEstoque.executor": "Run",
+    "JUnit.EstoqueServiceTeste.criarEstoque.executor": "Run",
+    "JUnit.EstoqueServiceTeste.deletarEstoque.executor": "Run",
+    "JUnit.EstoqueServiceTeste.deletarEstoqueComSucesso.executor": "Run",
+    "JUnit.EstoqueServiceTeste.deletarEstoqueNotFoundThrowsBusinnesException.executor": "Run",
+    "JUnit.EstoqueServiceTeste.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Ricardo Dev/OneDrive/Área de Trabalho/estoqueapi/estoque-api/estoque-api",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ricardo Dev\OneDrive\Área de Trabalho\estoqueapi\estoque-api\estoque-api\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EstoqueApiApplication">
-    <configuration name="EstoqueApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.EstoqueApiApplication" />
-      <module name="estoque-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.estoque.estoque_api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EstoqueServiceTeste">
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="envFilePaths">
         <option value="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/EstoqueApiApplication.java" />
@@ -82,9 +77,92 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EstoqueServiceTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="estoque-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.estoque.estoque_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EstoqueServiceTeste.atualizarEstoque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="estoque-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.estoque.estoque_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
+      <option name="METHOD_NAME" value="atualizarEstoque" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EstoqueServiceTeste.criarEstoque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="estoque-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.estoque.estoque_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
+      <option name="METHOD_NAME" value="criarEstoque" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EstoqueServiceTeste.deletarEstoqueComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="estoque-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.estoque.estoque_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
+      <option name="METHOD_NAME" value="deletarEstoqueComSucesso" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EstoqueServiceTeste.deletarEstoqueNotFoundThrowsBusinnesException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="estoque-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.estoque.estoque_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
+      <option name="METHOD_NAME" value="deletarEstoqueNotFoundThrowsBusinnesException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EstoqueApiApplication" />
+        <item itemvalue="JUnit.EstoqueServiceTeste" />
+        <item itemvalue="JUnit.EstoqueServiceTeste.atualizarEstoque" />
+        <item itemvalue="JUnit.EstoqueServiceTeste.criarEstoque" />
+        <item itemvalue="JUnit.EstoqueServiceTeste.deletarEstoqueComSucesso" />
+        <item itemvalue="JUnit.EstoqueServiceTeste.deletarEstoqueNotFoundThrowsBusinnesException" />
       </list>
     </recent_temporary>
   </component>
