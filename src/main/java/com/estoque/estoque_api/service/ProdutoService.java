@@ -51,7 +51,7 @@ public class ProdutoService {
         public ProdutoDTO buscarPorId(Long id) {
             Produto produto = produtoRepository.findById(id)
                     .orElseThrow(() -> {
-                        logger.warn("Produto não encontrado para ID: {}", id);
+                        logger.warn("Produto não encontrado para ID:", id);
                         return new BusinessException("Produto não encontrado com ID: " + id);
                     });
 
@@ -65,7 +65,7 @@ public class ProdutoService {
             Produto produto = produtoRepository.findById(id)
                     .orElseThrow(() -> {
                         logger.warn("Id não encontrado:" + id);
-                        return new BusinessException("Produto não encontrada com id: " + id);
+                        return new BusinessException("Produto não encontrado com id: " + id);
                     });
 
             produto.setNome(produtoAtualizado.getNome());

@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7a0face-aadb-4809-88c7-591894384e24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/service/EstoqueServiceTeste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/service/ProdutoServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/ProdutoServiceTeste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/ProdutoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/service/EstoqueServiceTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/service/EstoqueServiceTeste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,14 @@
     "JUnit.EstoqueServiceTeste.deletarEstoqueComSucesso.executor": "Run",
     "JUnit.EstoqueServiceTeste.deletarEstoqueNotFoundThrowsBusinnesException.executor": "Run",
     "JUnit.EstoqueServiceTeste.executor": "Run",
+    "JUnit.ProdutoApiApplicationTests.criarProdutoComSucesso.executor": "Run",
+    "JUnit.ProdutoServiceTest.atualizarProdutoComSucesso.executor": "Run",
+    "JUnit.ProdutoServiceTest.buscarPorIdComSucesso.executor": "Run",
+    "JUnit.ProdutoServiceTest.deletarProdutoComSucesso.executor": "Run",
+    "JUnit.ProdutoServiceTest.deveLancarBusinessExceptionComListaVazia.executor": "Run",
+    "JUnit.ProdutoServiceTest.deveLancarBusinessExceptionSeIdNaoExiste.executor": "Run",
+    "JUnit.ProdutoServiceTest.deveLancarBusinessExceptionSeProdutoNull.executor": "Run",
+    "JUnit.ProdutoServiceTest.listarProdutosComSucesso.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -66,7 +74,7 @@
       <recent name="C:\Users\Ricardo Dev\OneDrive\Área de Trabalho\estoqueapi\estoque-api\estoque-api\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EstoqueServiceTeste">
+  <component name="RunManager" selected="JUnit.ProdutoServiceTest.deletarProdutoComSucesso">
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="envFilePaths">
         <option value="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/EstoqueApiApplication.java" />
@@ -77,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EstoqueServiceTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProdutoServiceTest.atualizarProdutoComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="estoque-api" />
       <extension name="coverage">
         <pattern>
@@ -86,29 +94,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EstoqueServiceTeste.atualizarEstoque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="estoque-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.estoque.estoque_api.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
-      <option name="METHOD_NAME" value="atualizarEstoque" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.ProdutoServiceTest" />
+      <option name="METHOD_NAME" value="atualizarProdutoComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EstoqueServiceTeste.criarEstoque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProdutoServiceTest.buscarPorIdComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="estoque-api" />
       <extension name="coverage">
         <pattern>
@@ -117,14 +110,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
-      <option name="METHOD_NAME" value="criarEstoque" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.ProdutoServiceTest" />
+      <option name="METHOD_NAME" value="buscarPorIdComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EstoqueServiceTeste.deletarEstoqueComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProdutoServiceTest.deletarProdutoComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="estoque-api" />
       <extension name="coverage">
         <pattern>
@@ -133,14 +126,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
-      <option name="METHOD_NAME" value="deletarEstoqueComSucesso" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.ProdutoServiceTest" />
+      <option name="METHOD_NAME" value="deletarProdutoComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EstoqueServiceTeste.deletarEstoqueNotFoundThrowsBusinnesException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProdutoServiceTest.deveLancarBusinessExceptionSeIdNaoExiste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="estoque-api" />
       <extension name="coverage">
         <pattern>
@@ -149,8 +142,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EstoqueServiceTeste" />
-      <option name="METHOD_NAME" value="deletarEstoqueNotFoundThrowsBusinnesException" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.ProdutoServiceTest" />
+      <option name="METHOD_NAME" value="deveLancarBusinessExceptionSeIdNaoExiste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProdutoServiceTest.deveLancarBusinessExceptionSeProdutoNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="estoque-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.estoque.estoque_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.ProdutoServiceTest" />
+      <option name="METHOD_NAME" value="deveLancarBusinessExceptionSeProdutoNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EstoqueServiceTeste" />
-        <item itemvalue="JUnit.EstoqueServiceTeste.atualizarEstoque" />
-        <item itemvalue="JUnit.EstoqueServiceTeste.criarEstoque" />
-        <item itemvalue="JUnit.EstoqueServiceTeste.deletarEstoqueComSucesso" />
-        <item itemvalue="JUnit.EstoqueServiceTeste.deletarEstoqueNotFoundThrowsBusinnesException" />
+        <item itemvalue="JUnit.ProdutoServiceTest.deletarProdutoComSucesso" />
+        <item itemvalue="JUnit.ProdutoServiceTest.atualizarProdutoComSucesso" />
+        <item itemvalue="JUnit.ProdutoServiceTest.deveLancarBusinessExceptionSeIdNaoExiste" />
+        <item itemvalue="JUnit.ProdutoServiceTest.deveLancarBusinessExceptionSeProdutoNull" />
+        <item itemvalue="JUnit.ProdutoServiceTest.buscarPorIdComSucesso" />
       </list>
     </recent_temporary>
   </component>

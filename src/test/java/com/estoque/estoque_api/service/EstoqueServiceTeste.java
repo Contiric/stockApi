@@ -66,7 +66,7 @@ public class EstoqueServiceTeste {
         dtoSalvo.setProdutoIds(List.of(10L));
 
         when(estoqueMapper.toEntity(dto)).thenReturn(estoqueEntity);
-        when(estoqueRepository.save(any(Estoque.class))).thenReturn(estoqueSalvo); // <- aqui!
+        when(estoqueRepository.save(any(Estoque.class))).thenReturn(estoqueSalvo);
         when(estoqueMapper.toDTO(estoqueSalvo)).thenReturn(dtoSalvo);
 
         // Act
@@ -134,7 +134,7 @@ public class EstoqueServiceTeste {
         dtoEsperado.setProdutoIds(List.of(10L));
 
         when(estoqueRepository.findById(1L)).thenReturn(Optional.of(existente));
-        when(estoqueRepository.save(any(Estoque.class))).thenReturn(atualizado); // aqui!
+        when(estoqueRepository.save(any(Estoque.class))).thenReturn(atualizado);
         when(estoqueMapper.toDTO(atualizado)).thenReturn(dtoEsperado);
 
         EstoqueDTO resultado = estoqueService.atualizar(1L, dtoEntrada);
