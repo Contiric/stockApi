@@ -37,12 +37,12 @@ public class CategoriaService {
     }
 
     public List<CategoriaDTO> listarCategorias() {
-        logger.info("Listando categorias existentes");
+        logger.info("Listando Categorias existentes");
 
         List<Categoria> categorias = categoriaRepository.findAll();
         if (categorias.isEmpty()) {
-            logger.warn("Nenhuma categoria encontrada");
-            throw new BusinessException(("Nenhuma categoria encontrada"));
+            logger.warn("Nenhuma Categoria Encontrada");
+            throw new BusinessException(("Nenhuma Categoria Encontrada"));
         }
         return categorias.stream()
                 .map(categoriaMapper::toDto)
