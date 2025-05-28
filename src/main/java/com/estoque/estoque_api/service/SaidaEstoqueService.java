@@ -30,7 +30,7 @@ public class SaidaEstoqueService {
 
         SaidaEstoque saidaEstoque = saidaEstoqueRepository.findById(id)
                 .orElseThrow(() -> {
-                    logger.warn("Saída não encontrado para ID: {}", id);
+                    logger.warn("Saída não encontrado com ID: {}", id);
                     return new BusinessException("Saída não encontrado com ID: " + id);
                 });
 
@@ -47,8 +47,8 @@ public class SaidaEstoqueService {
             throw new BusinessException(("Nenhuma saída encontrada"));
         }
 
-        return saidaEstoqueRepository.findAll()
-                .stream().map(saidaEstoqueMapper::toDTO)
+        return saidaEstoques.stream()
+                .map(saidaEstoqueMapper::toDTO)
                 .collect(Collectors.toList());
     }
 

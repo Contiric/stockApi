@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7a0face-aadb-4809-88c7-591894384e24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/service/EntradaEstoqueServiceTeste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/service/SaidaEstoqueServiceTeste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EstoqueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/SaidaEstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/SaidaEstoqueService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,7 @@
     "JUnit.EntradaEstoqueServiceTeste.lancarBusinessExceptionQuandoIdNulo.executor": "Run",
     "JUnit.EntradaEstoqueServiceTeste.lancarBusinessExceptionSeListaForVazia.executor": "Run",
     "JUnit.EntradaEstoqueServiceTeste.listarEntradasComSucesso.executor": "Run",
+    "JUnit.EntradaEstoqueServiceTeste.removerEntradaComSucesso.executor": "Run",
     "JUnit.EstoqueServiceTeste.atualizarEstoque.executor": "Run",
     "JUnit.EstoqueServiceTeste.criarEstoque.executor": "Run",
     "JUnit.EstoqueServiceTeste.deletarEstoque.executor": "Run",
@@ -69,6 +72,11 @@
     "JUnit.ProdutoServiceTest.executor": "Run",
     "JUnit.ProdutoServiceTest.listarProdutosComSucesso.executor": "Run",
     "JUnit.ProdutoServiceTeste.atualizarProdutoComSucesso.executor": "Run",
+    "JUnit.SaidaEstoqueServiceTeste.buscarPorId.executor": "Run",
+    "JUnit.SaidaEstoqueServiceTeste.deletarSaidaComSucesso.executor": "Run",
+    "JUnit.SaidaEstoqueServiceTeste.deveLancarBusinessExceptionSeIdForNull.executor": "Run",
+    "JUnit.SaidaEstoqueServiceTeste.listarSaidasEstoqueComSucesso.executor": "Run",
+    "JUnit.SaidaEstoqueServiceTeste.registrarSaidaComSucesso.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -85,7 +93,7 @@
       <recent name="C:\Users\Ricardo Dev\OneDrive\Área de Trabalho\estoqueapi\estoque-api\estoque-api\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EntradaEstoqueServiceTeste.removerEntradaComSucesso">
+  <component name="RunManager" selected="JUnit.SaidaEstoqueServiceTeste.deletarSaidaComSucesso">
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="envFilePaths">
         <option value="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/EstoqueApiApplication.java" />
@@ -96,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EntradaEstoqueServiceTeste.buscarEntradaEstoqueComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaidaEstoqueServiceTeste.buscarPorId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="estoque-api" />
       <extension name="coverage">
         <pattern>
@@ -105,14 +113,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EntradaEstoqueServiceTeste" />
-      <option name="METHOD_NAME" value="buscarEntradaEstoqueComSucesso" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.SaidaEstoqueServiceTeste" />
+      <option name="METHOD_NAME" value="buscarPorId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EntradaEstoqueServiceTeste.lancarBusinessExceptionQuandoIdNulo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaidaEstoqueServiceTeste.deletarSaidaComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="estoque-api" />
       <extension name="coverage">
         <pattern>
@@ -121,14 +129,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EntradaEstoqueServiceTeste" />
-      <option name="METHOD_NAME" value="lancarBusinessExceptionQuandoIdNulo" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.SaidaEstoqueServiceTeste" />
+      <option name="METHOD_NAME" value="deletarSaidaComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EntradaEstoqueServiceTeste.lancarBusinessExceptionSeListaForVazia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaidaEstoqueServiceTeste.deveLancarBusinessExceptionSeIdForNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="estoque-api" />
       <extension name="coverage">
         <pattern>
@@ -137,14 +145,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EntradaEstoqueServiceTeste" />
-      <option name="METHOD_NAME" value="lancarBusinessExceptionSeListaForVazia" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.SaidaEstoqueServiceTeste" />
+      <option name="METHOD_NAME" value="deveLancarBusinessExceptionSeIdForNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EntradaEstoqueServiceTeste.listarEntradasComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaidaEstoqueServiceTeste.listarSaidasEstoqueComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="estoque-api" />
       <extension name="coverage">
         <pattern>
@@ -153,14 +161,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EntradaEstoqueServiceTeste" />
-      <option name="METHOD_NAME" value="listarEntradasComSucesso" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.SaidaEstoqueServiceTeste" />
+      <option name="METHOD_NAME" value="listarSaidasEstoqueComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EntradaEstoqueServiceTeste.removerEntradaComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaidaEstoqueServiceTeste.registrarSaidaComSucesso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="estoque-api" />
       <extension name="coverage">
         <pattern>
@@ -169,8 +177,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.estoque.estoque_api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.EntradaEstoqueServiceTeste" />
-      <option name="METHOD_NAME" value="removerEntradaComSucesso" />
+      <option name="MAIN_CLASS_NAME" value="com.estoque.estoque_api.service.SaidaEstoqueServiceTeste" />
+      <option name="METHOD_NAME" value="registrarSaidaComSucesso" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EntradaEstoqueServiceTeste.removerEntradaComSucesso" />
-        <item itemvalue="JUnit.EntradaEstoqueServiceTeste.lancarBusinessExceptionSeListaForVazia" />
-        <item itemvalue="JUnit.EntradaEstoqueServiceTeste.listarEntradasComSucesso" />
-        <item itemvalue="JUnit.EntradaEstoqueServiceTeste.lancarBusinessExceptionQuandoIdNulo" />
-        <item itemvalue="JUnit.EntradaEstoqueServiceTeste.buscarEntradaEstoqueComSucesso" />
+        <item itemvalue="JUnit.SaidaEstoqueServiceTeste.deletarSaidaComSucesso" />
+        <item itemvalue="JUnit.SaidaEstoqueServiceTeste.registrarSaidaComSucesso" />
+        <item itemvalue="JUnit.SaidaEstoqueServiceTeste.listarSaidasEstoqueComSucesso" />
+        <item itemvalue="JUnit.SaidaEstoqueServiceTeste.deveLancarBusinessExceptionSeIdForNull" />
+        <item itemvalue="JUnit.SaidaEstoqueServiceTeste.buscarPorId" />
       </list>
     </recent_temporary>
   </component>

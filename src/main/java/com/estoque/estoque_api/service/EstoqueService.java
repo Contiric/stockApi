@@ -41,7 +41,7 @@ public class EstoqueService {
 
         List<Estoque> estoques = estoqueRepository.findAll();
         if (estoques.isEmpty()){
-            logger.warn("Nenhum estqoue encontrado");
+            logger.warn("Nenhum estoque encontrado");
             throw new BusinessException(("Nenhum estoque encontrado"));
         }
         return estoques.stream()
