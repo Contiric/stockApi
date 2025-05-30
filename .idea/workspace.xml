@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7a0face-aadb-4809-88c7-591894384e24" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/estoque/estoque_api/service/SaidaEstoqueServiceTeste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/EstoqueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/SaidaEstoqueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/service/SaidaEstoqueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/EstoqueApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/estoque/estoque_api/EstoqueApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,54 +39,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EstoqueApiApplication.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "JUnit.CategoriaServiceTeste.atualizarCategoriaComSucesso.executor": "Run",
-    "JUnit.CategoriaServiceTeste.buscarCategoriaPorIdComSucesso.executor": "Run",
-    "JUnit.CategoriaServiceTeste.criarCategoriaComSucesso.executor": "Run",
-    "JUnit.CategoriaServiceTeste.deveLancarBusinessExceptionSeListaForVazia.executor": "Run",
-    "JUnit.CategoriaServiceTeste.lancarBusinessExceptionQuandoIdForNulo.executor": "Run",
-    "JUnit.CategoriaServiceTeste.listarCategoriasComSucesso.executor": "Run",
-    "JUnit.CategoriaServiceTeste.removerCategoriaComSucesso.executor": "Run",
-    "JUnit.EntradaEstoqueServiceTeste.buscarEntradaEstoqueComSucesso.executor": "Debug",
-    "JUnit.EntradaEstoqueServiceTeste.lancarBusinessExceptionQuandoIdNulo.executor": "Run",
-    "JUnit.EntradaEstoqueServiceTeste.lancarBusinessExceptionSeListaForVazia.executor": "Run",
-    "JUnit.EntradaEstoqueServiceTeste.listarEntradasComSucesso.executor": "Run",
-    "JUnit.EntradaEstoqueServiceTeste.removerEntradaComSucesso.executor": "Run",
-    "JUnit.EstoqueServiceTeste.atualizarEstoque.executor": "Run",
-    "JUnit.EstoqueServiceTeste.criarEstoque.executor": "Run",
-    "JUnit.EstoqueServiceTeste.deletarEstoque.executor": "Run",
-    "JUnit.EstoqueServiceTeste.deletarEstoqueComSucesso.executor": "Run",
-    "JUnit.EstoqueServiceTeste.deletarEstoqueNotFoundThrowsBusinnesException.executor": "Run",
-    "JUnit.EstoqueServiceTeste.executor": "Run",
-    "JUnit.ProdutoApiApplicationTests.criarProdutoComSucesso.executor": "Run",
-    "JUnit.ProdutoServiceTest.atualizarProdutoComSucesso.executor": "Run",
-    "JUnit.ProdutoServiceTest.buscarPorIdComSucesso.executor": "Run",
-    "JUnit.ProdutoServiceTest.deletarProdutoComSucesso.executor": "Run",
-    "JUnit.ProdutoServiceTest.deveLancarBusinessExceptionComListaVazia.executor": "Run",
-    "JUnit.ProdutoServiceTest.deveLancarBusinessExceptionSeIdNaoExiste.executor": "Run",
-    "JUnit.ProdutoServiceTest.deveLancarBusinessExceptionSeProdutoNull.executor": "Run",
-    "JUnit.ProdutoServiceTest.executor": "Run",
-    "JUnit.ProdutoServiceTest.listarProdutosComSucesso.executor": "Run",
-    "JUnit.ProdutoServiceTeste.atualizarProdutoComSucesso.executor": "Run",
-    "JUnit.SaidaEstoqueServiceTeste.buscarPorId.executor": "Run",
-    "JUnit.SaidaEstoqueServiceTeste.deletarSaidaComSucesso.executor": "Run",
-    "JUnit.SaidaEstoqueServiceTeste.deveLancarBusinessExceptionSeIdForNull.executor": "Run",
-    "JUnit.SaidaEstoqueServiceTeste.listarSaidasEstoqueComSucesso.executor": "Run",
-    "JUnit.SaidaEstoqueServiceTeste.registrarSaidaComSucesso.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ricardo Dev/OneDrive/Área de Trabalho/estoqueapi/estoque-api/estoque-api",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EstoqueApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoriaServiceTeste.atualizarCategoriaComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoriaServiceTeste.buscarCategoriaPorIdComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoriaServiceTeste.criarCategoriaComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoriaServiceTeste.deveLancarBusinessExceptionSeListaForVazia.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoriaServiceTeste.lancarBusinessExceptionQuandoIdForNulo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoriaServiceTeste.listarCategoriasComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoriaServiceTeste.removerCategoriaComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntradaEstoqueServiceTeste.buscarEntradaEstoqueComSucesso.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.EntradaEstoqueServiceTeste.lancarBusinessExceptionQuandoIdNulo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntradaEstoqueServiceTeste.lancarBusinessExceptionSeListaForVazia.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntradaEstoqueServiceTeste.listarEntradasComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntradaEstoqueServiceTeste.removerEntradaComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EstoqueServiceTeste.atualizarEstoque.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EstoqueServiceTeste.criarEstoque.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EstoqueServiceTeste.deletarEstoque.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EstoqueServiceTeste.deletarEstoqueComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EstoqueServiceTeste.deletarEstoqueNotFoundThrowsBusinnesException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EstoqueServiceTeste.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoApiApplicationTests.criarProdutoComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoServiceTest.atualizarProdutoComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoServiceTest.buscarPorIdComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoServiceTest.deletarProdutoComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoServiceTest.deveLancarBusinessExceptionComListaVazia.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoServiceTest.deveLancarBusinessExceptionSeIdNaoExiste.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoServiceTest.deveLancarBusinessExceptionSeProdutoNull.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoServiceTest.listarProdutosComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProdutoServiceTeste.atualizarProdutoComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SaidaEstoqueServiceTeste.buscarPorId.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SaidaEstoqueServiceTeste.deletarSaidaComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SaidaEstoqueServiceTeste.deveLancarBusinessExceptionSeIdForNull.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SaidaEstoqueServiceTeste.listarSaidasEstoqueComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SaidaEstoqueServiceTeste.registrarSaidaComSucesso.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ricardo Dev/OneDrive/Área de Trabalho/estoqueapi/estoque-api/estoque-api&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ricardo Dev\OneDrive\Área de Trabalho\estoqueapi\estoque-api\estoque-api\src" />
